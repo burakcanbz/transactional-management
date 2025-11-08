@@ -13,5 +13,5 @@ public class LoginUserDTO {
 
     private String email;
     private String hashedPassword;
-    
+
 }

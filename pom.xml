@@ -20,6 +20,8 @@
         <module>product</module>
         <module>order</module>
         <module>auth</module>
+        <module>notification</module>
+        <module>inventory</module>
     </modules>
 
     <properties>

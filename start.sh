@@ -5,9 +5,11 @@
 
 # Proje adları ve JAR yolları
 ORDER_JAR="./order/target/order-0.0.1-SNAPSHOT.jar"
-FOURTH_JAR="./product/target/product-0.0.1-SNAPSHOT.jar"
+PRODUCT_JAR="./product/target/product-0.0.1-SNAPSHOT.jar"
 USER_JAR="./user/target/user-0.0.1-SNAPSHOT.jar"
 AUTH_JAR="./auth/target/auth-0.0.1-SNAPSHOT.jar"
+NOTIFICATION_JAR="./notification/target/notification-0.0.1-SNAPSHOT.jar"
+INVENTORY_JAR="./inventory/target/inventory-0.0.1-SNAPSHOT.jar"
 
 mkdir -p logs
 rm -f logs/*.log
@@ -33,9 +35,11 @@ start_service() {
 
 # Tüm servisleri başlat
 start_service "Order-Service" "$ORDER_JAR"
+start_service "Product-Service" "$PRODUCT_JAR"
 start_service "User-Service" "$USER_JAR"
 start_service "Auth-Service" "$AUTH_JAR"
-start_service "Fourth-Service" "$FOURTH_JAR"
+start_service "Inventory-Service" "$INVENTORY_JAR"
+start_service "Notification-Service" "$NOTIFICATION_JAR"
 
 echo "--------------------------------------------------------"
 echo "Tüm başlatma komutları gönderildi."

@@ -1,4 +1,4 @@
-package com.example.auth.entity;
+package com.example.inventory.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,18 +6,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="auth")
+@Table(name="inventory")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Auth {
+public class Inventory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
-    private String username;
-    private String hashedPassword;
-    private String email;
-
+    private String name;
+    private Integer quantity;
+    private  Double price;
 }
