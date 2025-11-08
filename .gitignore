@@ -1,0 +1,67 @@
+### Eclipse ###
+.classpath
+.project
+.settings/
+target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+/out/
+/classes/
+
+### VS Code ###
+.vscode/
+
+### Maven ###
+# Kompile edilen çıktı
+target/
+# Test raporları
+surefire-reports/
+failsafe-reports/
+
+### Gradle ###
+.gradle/
+build/
+
+### Java ###
+# Genel çıktı dosyaları
+*.class
+
+# Jar, War, Ear paketleri
+*.jar
+*.war
+*.ear
+
+# Log dosyaları
+*.log
+logs/
+/tmp/
+
+# Hata ayıklama ve performans dosyaları
+*.hprof
+*.gc.log
+hs_err_pid*
+
+### Spring Boot ###
+# IDE'den veya manuel çalıştırmadan oluşturulan ayarlar ve derlenmiş kodlar
+!/src/main/**/resources/**/application*.yml
+!/src/main/**/resources/**/application*.yaml
+!/src/main/**/resources/**/application*.properties
+!/src/main/**/resources/**/bootstrap*.yml
+!/src/main/**/resources/**/bootstrap*.yaml
+!/src/main/**/resources/**/bootstrap*.properties
+
+# Paketleme sırasında IDE tarafından oluşturulan dosyalar
+*.original
+
+### Mac / OS X ###
+.DS_Store
+.Trashes
+*.iml
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
