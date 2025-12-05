@@ -25,10 +25,12 @@ public class OrderService {
     @Transactional
     public Order createOrder(CreateOrderDTO dto) {
         try {
-            Order order = new Order();
-            order.setUserId(dto.getUserId());
-            order.setTotalPrice(dto.getTotalPrice());
-            order.setStatus(OrderStatus.PENDING);
+            Order order = Order.builder()
+                    .userId(dto.getUserId())
+                    .totalPrice(dto.getTotalPrice())
+                    .status(OrderStatus.PENDING)
+                    .build();
+
 
             List<OrderItem> items = dto.getItems().stream().map(itemDto -> {
                 OrderItem item = new OrderItem();
