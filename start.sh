@@ -1,7 +1,4 @@
 #!/bin/bash
-# ---------------------------------------------
-# Mikroservisleri Build ve Başlatma Betiği
-# ---------------------------------------------
 
 # Proje adları ve JAR yolları
 SERVICES=(

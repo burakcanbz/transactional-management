@@ -1,4 +1,4 @@
-package com.example.inventory.listener;
+package com.example.inventory.messaging;
 
 import com.example.inventory.dto.ProductCreatedEventDTO;
 import com.example.inventory.entity.Inventory;
